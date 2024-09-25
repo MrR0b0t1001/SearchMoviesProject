@@ -3,9 +3,9 @@ import MovieCard from "../Components/MovieCard/MovieCard.jsx";
 import Navbar from "../Components/Navbar/Navbar.jsx";
 
 import "./App.css";
-const apiUrl = "https://www.omdbapi.com?apikey=9e6f812d";
+const apiUrl = import.meta.env.VITE_API_URL;
 
-import SearchIcon from "../public/eglass.svg";
+import SearchIcon from "/eglass.svg";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
